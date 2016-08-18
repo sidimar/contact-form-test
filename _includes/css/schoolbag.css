@@ -1,0 +1,145 @@
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    font-family: "Raleway", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #{{ site.color.secondary-dark }};
+}
+p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #6d6e71;
+}
+.btn-xl {
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    border-color: #{{ site.color.primary }};
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #{{ site.color.primary }};
+}
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active {
+    border-color: #{{ site.color.primary }};
+    color: #fff;
+    background-color: #{{ site.color.secondary }};
+}
+@media(min-width:768px) {
+  .btn-xl {
+      padding: 20px 40px;
+      margin-bottom: 0;
+  }
+}
+
+.btn-xl:active,
+.btn-xl.active {
+    background-image: none;
+}
+section#contact {
+    padding: 70px 0;
+    margin-top: 0;
+}
+section#contact .form-group {
+    margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 20px;
+}
+section#contact .form-group input.form-control {
+    height: auto;
+}
+section#contact .form-group textarea.form-control {
+    height: 236px;
+}
+section#contact .form-control {
+    border-color: #cccccc;
+    box-shadow: none;
+    border-width: 1px;
+}
+section#contact .form-control:focus {
+    border-color: #{{ site.color.primary }};
+    box-shadow: none;
+}
+
+section#contact::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-moz-placeholder {
+    text-transform: uppercase;
+    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact .text-danger {
+    color: #e74c3c;
+}
+section#contact .contact-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 15px;
+    background-color: #{{ site.color.primary }};
+}
+section#contact .contact-icon .fa {
+    font-size: 24px;
+    color: #fff;
+}
+section#contact .contact-icon .fa.fa-envelope {
+    font-size: 20px;
+}
+section#contact .media {
+    margin-bottom: 70px;
+    margin-left: 0;
+    line-height: 24px;
+}
+.media:first-child {
+    margin-top: 15px;
+}
+@media(min-width:991px) {
+  .media:first-child {
+      margin-top: 0;
+  }
+    section#contact .media {
+        margin-left: 20px;
+    }
+}
+section#contact .media-left {
+    padding-right: 30px;
+}

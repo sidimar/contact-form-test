@@ -1,0 +1,22 @@
+url:
+baseurl:
+
+# Site settings
+title: Test - Contact Form
+email: sidimar@gmail.com
+description: "Contact form provided for a test."
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 0D4F8B
+  secondary: 0D4F8B
+  secondary-dark: 333
+
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 21 The Hops - James's Walk Street,
+  - line: Dublin 8, Ireland
+
+# Build settings
+markdown: kramdown
