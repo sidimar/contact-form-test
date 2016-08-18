@@ -134,10 +134,14 @@ section#contact .contact-icon .fa {
 section#contact .contact-icon .fa.fa-envelope {
     font-size: 13px;
 }
+section#contact .contact-text {
+  padding-top: 35px;
+}
 section#contact .media {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     margin-left: 0;
     line-height: 24px;
+
 }
 .media:first-child {
     margin-top: 15px;
