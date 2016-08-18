@@ -7,6 +7,7 @@
 body {
     font-family: "Raleway", "Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #{{ site.color.secondary-dark }};
+    background-color: #f7f7f7;
 }
 p {
     font-size: 14px;
@@ -21,6 +22,14 @@ h6 {
     font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #6d6e71;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li   {
+  list-style: none;
+  margin-left: 10px;
 }
 .btn-xl {
     padding: 10px 20px;
@@ -66,8 +75,8 @@ section#contact .form-group textarea {
 section#contact .form-group input.form-control {
     height: auto;
 }
-section#contact .form-group textarea.form-control {
-    height: 236px;
+section#contact .form-group select.form-control {
+    height: 63px;
 }
 section#contact .form-control {
     border-color: #cccccc;
@@ -109,23 +118,24 @@ section#contact:-ms-input-placeholder {
 
 section#contact .text-danger {
     color: #e74c3c;
+    margin: 0;
 }
 section#contact .contact-icon {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    padding-top: 15px;
+    padding-top: 4px;
     background-color: #{{ site.color.primary }};
 }
 section#contact .contact-icon .fa {
-    font-size: 24px;
+    font-size: 14px;
     color: #fff;
 }
 section#contact .contact-icon .fa.fa-envelope {
-    font-size: 20px;
+    font-size: 13px;
 }
 section#contact .media {
-    margin-bottom: 70px;
+    margin-bottom: 25px;
     margin-left: 0;
     line-height: 24px;
 }
