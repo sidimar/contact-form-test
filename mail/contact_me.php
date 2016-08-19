@@ -1,29 +1,29 @@
 <?php
 // Check for empty fields
 if(empty($_POST['name'])  		||
-   empty($_POST['email']) 		||
-   empty($_POST['message'])	||
-   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
-   {
-	echo "No arguments Provided!";
-	return false;
-   }
+   empty($_POST['surname']) 		||
+   empty($_POST['company'])	||
+   empty($_POST['role'])	||
+   empty($_POST['state'])	||
+   empty($_POST['city'])	||
+
 
 $name = $_POST['name'];
-$email_address = $_POST['email'];
-$phone = $_POST['phone'];
-$message = $_POST['message'];
+$surname = $_POST['surname'];
+$company = $_POST['company'];
+$role = $_POST['role'];
+$state = $_POST['state'];
+$city = $_POST['city'];
 
 // Create the email and send the message
-$to = 'support@schoolbag.ie'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$to = 'sidimar@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "Website Contact Form:  $name";
-$email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
-$headers = "From: schoolbag@learningdata.ie\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$email_body = "Você recebeu uma nova mensagem vinda do formulário de contato Teste.\n\n"."Aqui estão os detalhes: Nome: $name\n\nSobrenome: $surname\n\nEmpresa: $company\n\nCargos:\n$role\n\nEstado: $state\n\nCidade: $city\n\n" ;
+$headers = "From: sidimar@gmail.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";
 if(mail($to,$email_subject,$email_body,$headers)){
     return true;
 }
 else{
     return false;
-}
-?>
+}?>

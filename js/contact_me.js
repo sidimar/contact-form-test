@@ -1,5 +1,4 @@
 $(function() {
-
     $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
@@ -9,9 +8,11 @@ $(function() {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
             var name = $("input#name").val();
-            var email = $("input#email").val();
-            var phone = $("input#phone").val();
-            var message = $("textarea#message").val();
+            var surname = $("input#surname").val();
+            var company = $("input#company").val();
+            var role = $("input#role").val();
+            var state = $("input#state").val();
+            var city = $("input#city").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
@@ -22,9 +23,11 @@ $(function() {
                 type: "POST",
                 data: {
                     name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
+                    surname: surname,
+                    company: company,
+                    role: role,
+                    state: state,
+                    city: city
                 },
                 cache: false,
                 success: function() {
@@ -33,7 +36,7 @@ $(function() {
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-success')
-                        .append("<strong>Your message has been sent. </strong>");
+                        .append("<strong>Sua mensagem foi enviada com sucesso. </strong>");
                     $('#success > .alert-success')
                         .append('</div>');
 
@@ -45,10 +48,8 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
+                    $('#success > .alert-danger').append("<strong>Desculpe " + firstName + ", parace que ocorreu um erro no servidor. Por favor tente novamente mais tarde.");
                     $('#success > .alert-danger').append('</div>');
-                    //clear all fields
-                    $('#contactForm').trigger("reset");
                 },
             })
         },

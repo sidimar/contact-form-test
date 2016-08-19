@@ -60,8 +60,24 @@ ul li   {
 .btn-xl.active {
     background-image: none;
 }
+section#contact header {
+  height: 350px;
+  background-image: url(img/header-bg.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+  margin-bottom: 70px;
+}
+section#contact header h1,
+section#contact header h3 {
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+section#contact header h3 {
+  font-weight: 100;
+}
 section#contact {
-    padding: 70px 0;
+    padding: 0 0 70px;
     margin-top: 0;
 }
 section#contact .form-group {
@@ -78,6 +94,10 @@ section#contact .form-group input.form-control {
 section#contact .form-group select.form-control {
     height: 63px;
 }
+section#contact .form-group select.form-control .option-first option:checked{
+  color:red;
+}
+
 section#contact .form-control {
     border-color: #cccccc;
     box-shadow: none;
@@ -120,40 +140,10 @@ section#contact .text-danger {
     color: #e74c3c;
     margin: 0;
 }
-section#contact .contact-icon {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    padding-top: 4px;
-    background-color: #{{ site.color.primary }};
+section#contact .contact-text h2 {
+  color: #{{ site.color.primary }};
+  margin-top: 0;
 }
-section#contact .contact-icon .fa {
-    font-size: 14px;
-    color: #fff;
-}
-section#contact .contact-icon .fa.fa-envelope {
-    font-size: 13px;
-}
-section#contact .contact-text {
-  padding-top: 35px;
-}
-section#contact .media {
-    margin-bottom: 35px;
-    margin-left: 0;
-    line-height: 24px;
-
-}
-.media:first-child {
-    margin-top: 15px;
-}
-@media(min-width:991px) {
-  .media:first-child {
-      margin-top: 0;
-  }
-    section#contact .media {
-        margin-left: 20px;
-    }
-}
-section#contact .media-left {
-    padding-right: 30px;
+section#contact .contact-text h4 {
+  margin-top: 30px;
 }

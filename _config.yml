@@ -1,6 +1,5 @@
 url:
-baseurl:
-
+baseurl: 
 # Site settings
 title: Test - Contact Form
 email: sidimar@gmail.com
@@ -8,9 +7,8 @@ description: "Contact form provided for a test."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 0D4F8B
-  secondary: 0D4F8B
-  secondary-dark: 333
+  primary: 9c4f33
+  secondary: 9c4f33
 
 
 # Postal address (add as many lines as necessary)

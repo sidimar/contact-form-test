@@ -1,3 +1,3 @@
 {% include css/bootstrap.min.css %}
-{% include css/schoolbag.css %}
+{% include css/test.css %}
 {{ content }}
